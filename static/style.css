@@ -42,10 +42,10 @@ body{
   width: 280px;
   border-color: #2ecc71;
 } */
-.box input[type = "submit"]{
+.box input[type = "submit"],.box input[type = "reset"]{
   border:0;
   background: none;
-/*   display: block; */
+  display: block;
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -58,9 +58,15 @@ body{
   transition: 0.25s;
   cursor: pointer;
 }
+
 .box input[type = "submit"]:hover{
   background: #2ecc71;
 }
+
+.box input[type = "reset"]:hover{
+  background: #2ecc71;
+}
+
 
 select {
    border:0;

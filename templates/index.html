@@ -6,9 +6,10 @@
   <title>َStudent Registeration Form</title>
   <link rel="stylesheet" href="../static/style.css">
 </head>
-
 <body>
-
+  {%if message%}
+  <p class = "message">{{ message | safe }}</p>
+  {% endif %} 
   <form class="box" action="/submit" method="POST">
     <h1>Student Details</h1>
     <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter on alphabets only. ')" 
@@ -25,29 +26,29 @@
     <input placeholder="Birthday" class="textbox-n" type="text" onfocus="(this.type='date')"
       name = "birthday" id="date">
     
-    <select id="gender">
-      <option value="volvo">Gender</option>
-      <option value="saab">Male</option>
-      <option value="mercedes">Female</option>
-      <option value="audi">Other</option>
+    <select id="gender" name = "gender">
+      <option value="">Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
     </select>
     
-    <input type="text" name="" id="myHeader" placeholder="Address">
+    <input type="text" name="address" id="myHeader" placeholder="Address">
 
-    <input type="text" id="ox" placeholder="State">
-    <input type="text" id="ox" placeholder="City">
-    <input type="text" id="ox" placeholder="Pincode">
+    <input type="text" name="state"  id="ox" placeholder="State">
+    <input type="text"  name="city" id="ox" placeholder="City">
+    <input type="text"  name="pincode" id="ox" placeholder="Pincode">
 
     <h1>Masters Details</h1>
     
-    <input type="text" name="" id="ty" placeholder="University Name">
-    <input type="text" id="px" placeholder="Field">
-    <input type="number" id="ox" min="1950" max="2020" step="01" placeholder="Year" 
+    <input type="text" name="uni_name" id="ty" placeholder="University Name">
+    <input type="text" name="field" id="px" placeholder="Field">
+    <input type="number" name = "year" id="ox" min="1950" max="2020" step="01" placeholder="Year" 
     oninvalid="setCustomValidity('not a valid year, year should be between 1950 to 2020  ')"></input>
 
 
     <input type="submit" name="" value="Login">
-    <input type="submit" value="Reset">
+    <input type="reset" value="Reset">
   
   </form>
 
