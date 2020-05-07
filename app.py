@@ -29,12 +29,12 @@ def submit():
         fields = [first_name,last_name, email, phone, birthday, gender,
                  address, state, city, pincode, uni_name, field, year]
         
-        with open(r'data.csv', 'a') as f:
-            writer = csv.writer(f)
+        with open(r'data.csv', 'a') as data:
+            writer = csv.writer(data)
             writer.writerow(fields)
 
-        # if first_name == '':
-        #     return render_template('index.html', message = 'enter required fields')
+        if first_name == '':
+            return render_template('index.html', message = 'enter required fields')
         return render_template('success.html')
 
 # fields=['first_name','last_name','email','phone', 'birthday']

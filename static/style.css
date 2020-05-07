@@ -45,8 +45,8 @@ body{
 .box input[type = "submit"],.box input[type = "reset"]{
   border:0;
   background: none;
-  display: block;
-  margin-left: 10px;
+  /* display: block; */
+  margin-left: 0px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -137,4 +137,8 @@ select {
   outline: none;
   color: white;
   border-radius: 44px;
+}
+
+.error {
+  color: red
 }
