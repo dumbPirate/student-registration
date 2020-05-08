@@ -37,8 +37,6 @@ def submit():
             return render_template('index.html', message = 'enter required fields')
         return render_template('success.html')
 
-# fields=['first_name','last_name','email','phone', 'birthday']
-
 
 
 
