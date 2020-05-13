@@ -16,7 +16,6 @@ def submit():
         phone = request.form['phone']
         birthday = request.form['birthday']
         gender = request.form['gender']
-        address = request.form['address']
         state = request.form['state']
         city = request.form['city']
         pincode = request.form['pincode']
@@ -26,8 +25,8 @@ def submit():
 
 
 
-        fields = [first_name,last_name, email, phone, birthday, gender,
-                 address, state, city, pincode, uni_name, field, year]
+        fields = [first_name,last_name, email, phone, birthday, gender, 
+                 state, city, pincode, uni_name, field, year]
         
         with open(r'data.csv', 'a') as data:
             writer = csv.writer(data)

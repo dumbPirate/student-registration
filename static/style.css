@@ -1,162 +1,88 @@
 body{
-  font-family: sans-serif;
-  background: linear-gradient(to right, #2c3e50, #fd746c);
-}
-.box{
-  width: 500px;
-  background: white;
-  /* background: linear-gradient(to right, #2c3e50, #fd746c) */
-  border-radius: 12px 12px 12px 12px;
-  /* background: white;  */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: left;
-  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
-              0 4px 2px rgba(0,0,0,0.09), 
-              0 8px 4px rgba(0,0,0,0.09), 
-              0 16px 8px rgba(0,0,0,0.09),
-              0 32px 16px rgba(0,0,0,0.09);
+    /* font-family: sans-serif; */
+    background: linear-gradient(to right, #2c3e50, #fd746c);
 }
 
-.box h1{
-  color: white;
-  font-size: 37px;
-  padding-left: 25px;
-  padding-top: 15px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  border-radius: 12px 12px 0px 0px;
-  /* text-shadow: 1px 1px black; */
-  background: #00695c;
-  font-weight: 400;
-  margin: 0px;
-  margin-bottom: 20px;
+html{ overflow-y: scroll;}
+
+
+.box{
+    width: 450px;
+    background: white;
+    border-radius: 12px 12px 12px 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+                0 4px 2px rgba(0,0,0,0.09), 
+                0 8px 4px rgba(0,0,0,0.09), 
+                0 16px 8px rgba(0,0,0,0.09),
+                0 32px 16px rgba(0,0,0,0.09);
 }
-.box input[type = "text"],.box input[type = "date"],.box input[type = "email"],.box input[type = "number"]{
-  border: 0;
-  outline: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  /* background: transparent; */
-  margin-left: 25px;
-  margin-bottom: 15px;
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 8px 10px;
-  width: 180px;
-  /* opacity: 0.6; */
-  /* outline: none; */
-  color: black;
-  border-radius: 18px;
+
+.select-dropdown{ color: grey; }
+
+.to_pad{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h5{
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: teal;
+    font-variant: small-caps;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    color: white;
+    border-radius: 13px 13px 0px 0px;
+    text-shadow: teal 3px 3px 5px;
+}
+
+
+.input-field.col.s6,.input-field.col.s12,.input-field.col.s4,
+.input-field.col.s9,.input-field.col.s3{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+
+input[type=date]{
+    color: grey;
+}
+
+
+.select-dropdown{
+    color: grey;
 }
 
 .box input[type = "submit"],.box input[type = "reset"]{
-  border:0;
-  background: #00695c;
-  /* display: block; */
-  margin-left: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  border: 2px solid #00695c;
-  padding: 8px 30px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-
-.box input[type = "submit"]:hover{
-  background: white;
-  color: #00695c;
-}
-
-.box input[type = "reset"]:hover{
-  background: white;
-  color: #00695c;
-}
-
-
-#st{
-  border:0;
-  margin-left: 25px;
-  background: transparent;
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 8px 10px;
-  width: 205px;
-  outline: none;
-  color: grey;
-  border-radius: 24px;
-} 
-
-#gender {
-  border:0;
- margin-left: 25px;
- background: transparent;
- text-align: left;
- border: 2px solid #00695c;
- padding: 8px 10px;
- width: 156px;
- outline: none;
- color: grey;
- border-radius: 24px;
-} 
-
-#myHeader{
-  border:0;
-  background: none;
-  margin-left: 25px;
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 25px 10px;
-  width: 410px;
-  outline: none;
-  color: white;
-  border-radius: 25px;
-}
-
-#ox{
-  border:0;
-  background: none;
-  /* margin-left: 25px; */
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 8px 10px;
-  width: 85px;
-  outline: none;
-  color: black;
-  border-radius: 24px;
-}
-
-
-#ty{
-  border:0;
-  background: none;
-  margin-left: 25px;
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 8px 10px;
-  width: 410px;
-  outline: none;
-  color: white;
-  border-radius: 44px;
-}
-
-#px{
     border:0;
-  background: none;
-  /* margin: 9px; */
-  text-align: left;
-  border: 2px solid #00695c;
-  padding: 8px 10px;
-  width: 270px;
-  outline: none;
-  color: white;
-  border-radius: 44px;
+    background: teal;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid teal;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
 }
-
-
-
+  
+.box input[type = "submit"]:hover{
+    background: white;
+    color: teal;
+}
+  
+.box input[type = "reset"]:hover{
+    background: white;
+    color: teal;
+}

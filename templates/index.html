@@ -1,108 +1,149 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link type="text/css" rel="stylesheet" href="../static/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="../static/sam.js"></script>
+    <script type="text/javascript" src="../static/materialize.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>َStudent Registeration Form</title>
-  <link rel="stylesheet" href="../static/style.css">
-</head>
-<body>
+  <body>
+    <div class = "container">
+        <div class = "row">       
+                 
+            <form  class="box" action="/submit" method="POST">
 
-  <form class="box" action="/submit" method="POST">
-    <h1>Student Details</h1>
+                <div>
+                    <h5>Student Registeration</h>
+                </div>
 
-    <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter alphabets only. ')" 
-    type="text" class="form-control" name="first_name" placeholder="Firstname">   
-    <input type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Please enter alphabets only. ')" 
-      name="last_name" placeholder="Lastname">
+                <div class = "to_pad">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" pattern="^[a-zA-Z]*" 
+                        oninvalid="setCustomValidity('Please enter alphabets only. ')"
+                        oninput="this.setCustomValidity('')" class="validate" name="first_name">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" pattern="^[a-zA-Z]*" 
+                        oninvalid="setCustomValidity('Please enter alphabets only. ')"
+                        oninput="this.setCustomValidity('')"  class="validate" name="last_name">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                
+        
+                    <div class="input-field col s6">
+                        <input id="email" type="email" class="validate" name="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="phone_number" type="text" pattern="[1-9]{1}[0-9]{9}" 
+                        title="10 digit number"  data-length="10" name="phone">
+                        <label for="phone_number">Phone Number</label>
+                    </div>           
+                
+                    
+                    <div class="input-field col s6 tim">
+                        <input type="date" class="datepicker" name="birthday">
+                    </div>
     
-    <br>
- 
-    <input type="email" name="email" oninvalid="setCustomValidity('invalid email')" placeholder="Email">
     
-    <input type="text" pattern="[1-9]{1}[0-9]{9}" title="10 digit number" name="phone"
-      placeholder="Phone Number">
+                    <div class="input-field col s6">
+                        <div class="input-field col s6">
+                            <p><label>
+                                <input type="radio" name="gender" value="male" checked />
+                                <span>Male</span>
+                            </label></p>
+                        </div>
+                        <div class="input-field col s6">
+                            <p><label>
+                                <input type="radio" name="gender" value="female" />
+                                <span>Female</span>
+                            </label></p>
+                        </div>
+                    </div>
     
-    <br>
 
-    <input placeholder="Birthday" class="textbox-n" type="text" onfocus="(this.type='date')"
-      name = "birthday" id="date">
-    <select id="st" name = "gender">
-      <option value="">Gender</option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-      <option value="other">Other</option>
-
-    </select>
+                    <div class="input-field col s3">
+                        <input id="city" type="text"  pattern="^[a-zA-Z]*" 
+                        oninvalid="setCustomValidity('Please enter alphabets only. ')"
+                        oninput="this.setCustomValidity('')" class="validate" name="city">
+                        <label for="city">City</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="pincode" type="text" pattern="[1-9]{1}[0-9]{5}" 
+                        title="6 digit code"  data-length="6" class="validate" name="pincode">
+                        <label for="pincode">PIncode</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="st" name="state">
+                            <option value="null" disabled selected>State</option>
+                            <option value=”Andhra Pradesh”>Andhra Pradesh</option>
+                            <option value=”Arunachal Pradesh”>Arunachal Pradesh</option>
+                            <option value=”Assam”>Assam</option>
+                            <option value=”Bihar”>Bihar</option>
+                            <option value=”Chandigarh”>Chandigarh</option>
+                            <option value=”Chhattisgarh”>Chhattisgarh</option>
+                            <option value=”Daman and Diu”>Daman and Diu</option>
+                            <option value=”Delhi”>Delhi</option>
+                            <option value=”Lakshadweep”>Lakshadweep</option>
+                            <option value=”Puducherry”>Puducherry</option>
+                            <option value=”Goa”>Goa</option>
+                            <option value=”Gujarat”>Gujarat</option>
+                            <option value=”Haryana”>Haryana</option>
+                            <option value=”Himachal Pradesh”>Himachal Pradesh</option>
+                            <option value=”Jammu and Kashmir”>Jammu & Kashmir</option>
+                            <option value=”Jharkhand”>Jharkhand</option>
+                            <option value=”Karnataka”>Karnataka</option>
+                            <option value=”Kerala”>Kerala</option>
+                            <option value=”Madhya Pradesh”>Madhya Pradesh</option>
+                            <option value=”Maharashtra”>Maharashtra</option>
+                            <option value=”Manipur”>Manipur</option>
+                            <option value=”Meghalaya”>Meghalaya</option>
+                            <option value=”Mizoram”>Mizoram</option>
+                            <option value=”Nagaland”>Nagaland</option>
+                            <option value=”Odisha”>Odisha</option>
+                            <option value=”Punjab”>Punjab</option>
+                            <option value=”Rajasthan”>Rajasthan</option>
+                            <option value=”Sikkim”>Sikkim</option>
+                            <option value=”Tamil Nadu”>Tamil Nadu</option>
+                            <option value=”Telangana”>Telangana</option>
+                            <option value=”Tripura”>Tripura</option>
+                            <option value=”Uttar Pradesh”>Uttar Pradesh</option>
+                            <option value=”Uttarakhand”>Uttarakhand</option>
+                            <option value=”West Bengal”>West Bengal</option>
+                        </select>
+                        <label></label>
+                    </div>
     
-    <br>
+
+                    <div class="input-field col s12">
+                        <input id="university" type="text" class="validate" name="uni_name">
+                        <label for="university">University</label>
+                    </div>
     
-    <input type="text" name="address" id="myHeader" placeholder="Address">
+                    <div class="input-field col s9">
+                        <input id="Field" type="text" class="validate" name="field">
+                        <label for="Field">Field</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="year" type="number" min="1950" max="2020" class="validate" name="year">
+                        <label for="year">Year</label>
+                    </div>
     
-    <br>
 
-    <select id="gender" name = "state">
+                    <input type="submit" name="" value="Submit">
+                    <input type="reset" value="Reset">
+     
+                </div>
 
-      <option value=”tt”>State</option>
-      <option value=”Andhra Pradesh”>Andhra Pradesh</option>
-      <!-- <option value=”Andaman and Nicobar Islands”>Andaman and Nicobar Islands</option> -->
-      <option value=”Arunachal Pradesh”>Arunachal Pradesh</option>
-      <option value=”Assam”>Assam</option>
-      <option value=”Bihar”>Bihar</option>
-      <option value=”Chandigarh”>Chandigarh</option>
-      <option value=”Chhattisgarh”>Chhattisgarh</option>
-      <!-- <option value=”Dadar and Nagar Haveli”>Dadar and Nagar Haveli</option> -->
-      <option value=”Daman and Diu”>Daman and Diu</option>
-      <option value=”Delhi”>Delhi</option>
-      <option value=”Lakshadweep”>Lakshadweep</option>
-      <option value=”Puducherry”>Puducherry</option>
-      <option value=”Goa”>Goa</option>
-      <option value=”Gujarat”>Gujarat</option>
-      <option value=”Haryana”>Haryana</option>
-      <option value=”Himachal Pradesh”>Himachal Pradesh</option>
-      <option value=”Jammu and Kashmir”>Jammu & Kashmir</option>
-      <option value=”Jharkhand”>Jharkhand</option>
-      <option value=”Karnataka”>Karnataka</option>
-      <option value=”Kerala”>Kerala</option>
-      <option value=”Madhya Pradesh”>Madhya Pradesh</option>
-      <option value=”Maharashtra”>Maharashtra</option>
-      <option value=”Manipur”>Manipur</option>
-      <option value=”Meghalaya”>Meghalaya</option>
-      <option value=”Mizoram”>Mizoram</option>
-      <option value=”Nagaland”>Nagaland</option>
-      <option value=”Odisha”>Odisha</option>
-      <option value=”Punjab”>Punjab</option>
-      <option value=”Rajasthan”>Rajasthan</option>
-      <option value=”Sikkim”>Sikkim</option>
-      <option value=”Tamil Nadu”>Tamil Nadu</option>
-      <option value=”Telangana”>Telangana</option>
-      <option value=”Tripura”>Tripura</option>
-      <option value=”Uttar Pradesh”>Uttar Pradesh</option>
-      <option value=”Uttarakhand”>Uttarakhand</option>
-      <option value=”West Bengal”>West Bengal</option>
+            </form>
 
-    </select>
-  
-    <input type="text"  name="city" id="ox" placeholder="City">
-    <input type="text"  name="pincode" id="ox" pattern="[1-9]{1}[0-9]{5}" title="6 digit number" placeholder="Pincode">
-    
-    <br>
-
-    <!-- <h1>Masters Details</h1> -->
-    
-    <input type="text" name="uni_name" id="ty" placeholder="University Name">
-    <input type="text" name="field" id="px" placeholder="Field">
-    <input type="number" name = "year" id="ox" min="1950" max="2020" step="01" placeholder="Year" 
-      ></input>
-    <br>
-
-    <input type="submit" name="" value="Login">
-    <input type="reset" value="Reset">
-  
-  </form>
-
-  <script type="text/javascript" src="../js/materialize.min.js"></script>
-
-</body>
-
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/materialize.min.js"></script>
+  </body>
 </html>
