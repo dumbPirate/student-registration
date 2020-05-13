@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request
 import csv
+import tablib
+import pandas as pd
+import os
 
 app = Flask(__name__)
 
@@ -36,6 +39,10 @@ def submit():
             return render_template('index.html', message = 'enter required fields')
         return render_template('success.html')
 
+@app.route("/data")
+def show_tables():
+    table = pd.DataFrame.from_csv('data.csv')
+    return render_template("data.html", data = table.to_html())
 
 
 
