@@ -11,8 +11,7 @@ flask = "*"
 psycopg2 = "*"
 flask-sqlalchemy = "*"
 gunicorn = "*"
-flask-table = "*"
-tablib = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.8"

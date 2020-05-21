@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="../static/materialize.min.css"  media="screen,projection"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="../static/sam.js"></script>
+    <script type="text/javascript" src="../static/materialize.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+
+  <body>
+    <div class="box2">
+        <div>
+          <h2>Database</h2>
+        </div>
+        <div class="tables">
+          <!-- {% block div %} -->
+          {{ data|safe }}
+          <!-- {% endblock %}   -->
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="../static/materialize.min.js"></script> -->
+  </body>
+</html>

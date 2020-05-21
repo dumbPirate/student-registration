@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="../static/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link type="text/css" rel="stylesheet" href="../static/materialize.min.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="../static/sam.js"></script>
@@ -17,9 +17,9 @@
             <form  class="box" action="/submit" method="POST">
 
                 <div>
-                    <h5>Student Registeration </h>
+                    <h5>Edit Student Details</h>
                     <div id="ico">
-                        <a href="/toedit"><i>&#9998;</i></a>
+                        <!-- <a href="/toedit"><i>&#9998;</i></a> -->
                         <a href="/data"><i>&#9729;</i></a>
                     </div>
                 </div>
@@ -28,30 +28,30 @@
                     <div class="input-field col s6">
                         <input id="first_name" type="text" pattern="^[a-zA-Z]*" 
                         oninvalid="setCustomValidity('Please enter alphabets only. ')"
-                        oninput="this.setCustomValidity('')" class="validate" name="first_name">
+                        oninput="this.setCustomValidity('')" class="validate" value = {{variable['first_name']}} name="first_name">
                         <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
                         <input id="last_name" type="text" pattern="^[a-zA-Z]*" 
                         oninvalid="setCustomValidity('Please enter alphabets only. ')"
-                        oninput="this.setCustomValidity('')"  class="validate" name="last_name">
+                        oninput="this.setCustomValidity('')"  class="validate" value = {{variable[' last_name']}} name="last_name">
                         <label for="last_name">Last Name</label>
                     </div>
                 
         
                     <div class="input-field col s6">
-                        <input id="email" type="email" class="validate" name="email">
+                        <input id="email" type="email" class="validate" value = {{variable[' email']}} name="email">
                         <label for="email">Email</label>
                     </div>
                     <div class="input-field col s6">
                         <input id="phone_number" type="text" pattern="[1-9]{1}[0-9]{9}" 
-                        title="10 digit number"  data-length="10" name="phone">
+                        title="10 digit number"  data-length="10" value = {{variable[' phone']}} name="phone">
                         <label for="phone_number">Phone Number</label>
                     </div>           
                 
                     
                     <div class="input-field col s6 tim">
-                        <input type="date" class="datepicker" name="birthday">
+                        <input type="date" class="datepicker" value = {{variable[' birthday']}} name="birthday">
                     </div>
     
     
@@ -74,16 +74,16 @@
                     <div class="input-field col s3">
                         <input id="city" type="text"  pattern="^[a-zA-Z]*" 
                         oninvalid="setCustomValidity('Please enter alphabets only. ')"
-                        oninput="this.setCustomValidity('')" class="validate" name="city">
+                        oninput="this.setCustomValidity('')" class="validate"  value = {{variable[' city']}} name="city">
                         <label for="city">City</label>
                     </div>
                     <div class="input-field col s3">
                         <input id="pincode" type="text" pattern="[1-9]{1}[0-9]{5}" 
-                        title="6 digit code"  data-length="6" class="validate" name="pincode">
+                        title="6 digit code"  data-length="6" class="validate"  value = {{variable[' pincode']}} name="pincode">
                         <label for="pincode">PIncode</label>
                     </div>
                     <div class="input-field col s6">
-                        <select id="st" name="state">
+                        <select id="st"  value = {{variable[' state']}} name="state">
                             <option value=null disabled selected>State</option>
                             <option value=Andhra_Pradesh>Andhra Pradesh</option>
                             <option value=Arunachal_Pradesh>Arunachal Pradesh</option>
@@ -125,23 +125,22 @@
     
 
                     <div class="input-field col s12">
-                        <input id="university" type="text" class="validate" name="uni_name">
+                        <input id="university" type="text" class="validate"  value = {{variable[' uni_name']}} name="uni_name">
                         <label for="university">University</label>
                     </div>
     
                     <div class="input-field col s9">
-                        <input id="Field" type="text" class="validate" name="field">
+                        <input id="Field" type="text" class="validate"  value = {{variable[' field']}} name="field">
                         <label for="Field">Field</label>
                     </div>
                     <div class="input-field col s3">
-                        <input id="year" type="number" min="1950" max="2020" class="validate" name="year">
+                        <input id="year" type="number" min="1950" max="2020" class="validate"  value = {{variable[' year']}} name="year">
                         <label for="year">Year</label>
                     </div>
     
 
                     <input type="submit" name="" value="Submit">
                     <input type="reset" value="Reset">
-
      
                 </div>
 

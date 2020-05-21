@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 import csv
-import tablib
 import pandas as pd
-import os
 
 app = Flask(__name__)
 
@@ -39,11 +37,31 @@ def submit():
             return render_template('index.html', message = 'enter required fields')
         return render_template('success.html')
 
+
 @app.route("/data")
 def show_tables():
-    table = pd.DataFrame.from_csv('data.csv')
-    return render_template("data.html", data = table.to_html())
+    a = pd.read_csv("data.csv")
+    html_file = a.to_html()
+    return render_template('data.html', data=html_file)
 
+
+@app.route("/toedit")
+def to_edit():
+    return render_template('toedit.html')
+
+
+
+@app.route("/edit", methods = ['POST'])
+def edit_data():
+    if request.method == 'POST':
+        f_name = request.form['f_name']
+        a = pd.read_csv("data.csv")
+        b = list(a)
+        c = a[a["first_name"]==f_name].values.tolist()[0]
+        d = dict(zip(b, c))
+
+
+    return render_template('edit.html', variable = d)
 
 
 if __name__ == '__main__':
