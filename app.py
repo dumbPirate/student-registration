@@ -51,15 +51,17 @@ def to_edit():
 
 
 
-@app.route("/edit", methods = ['POST'])
+@app.route('/edit', methods = ['POST'])
 def edit_data():
     if request.method == 'POST':
         f_name = request.form['f_name']
         a = pd.read_csv("data.csv")
         b = list(a)
-        c = a[a["first_name"]==f_name].values.tolist()[0]
+        c = a[a['first_name']==f_name].values.tolist()[0]
         d = dict(zip(b, c))
-
+        r = a[a['first_name']== f_name].index
+        a.drop(r, inplace = True)
+        a.to_csv('data.csv', index = False)
 
     return render_template('edit.html', variable = d)
 
