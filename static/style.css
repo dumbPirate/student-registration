@@ -56,6 +56,25 @@ body{
     padding-right: 15px;
 }
 
+.btn-large {
+    padding: 0 15px !important;
+    width: 130px;
+    /* height: 100px; */
+}
+
+i.left {
+    margin-right: 0px;
+}
+
+.btn, .btn-large, .btn-small {
+    background-color: teal;
+}
+
+.btn, .btn-large, .btn-small, .btn-flat {
+    border-radius: 12px;
+}
+
+
 h5, h2{
     padding-left: 25px;
     padding-right: 10px;

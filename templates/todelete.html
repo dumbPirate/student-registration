@@ -14,31 +14,25 @@
     <div class = "container">
         <div class = "row">       
                  
-            <form  class="box2" action="/submit" method="POST">
+            <form  class="box" action="/delete" method="POST">
 
-
-              <div>
-                <h5>Success</h>
-                <div id="ico">
-                    <a href="/toedit"><i>&#9998;</i></a>
-                    <!-- <a href="/data"><i>&#9729;</i></a> -->
+                <div>
+                    <h5>Delete User</h>
                 </div>
-            </div>
+<!-- 
+                <div>
+                  <input id = "dis" type="text" placeholder="dis" class = "validate" readonly="readonly" name = "dis" />
+                  <label for="dis"></label>
+                </div> -->
 
-                <div class="to_pad">
-                  <!-- <div>
-                    <input id = "dis" type="text" placeholder="dis" class = "validate" readonly="readonly" name = "dis" />
-                    <label for="dis"></label>
-                  </div> -->
-                  <p>Thank you for registering.</p>
-                  <p>Your Registeration number is {{variable}}.</p>
-                  <div class="tables">
-                    <!-- {% block div %} -->
-                    {{ data|safe }}
-                    <!-- {% endblock %}   -->
-                  </div>
+                <div class="input-field col s12">
+                    <input id="r_num" type="text" class="validate" name="r_num">
+                    <label for="r_num">Registeration Number</label>
                 </div>
-
+    
+                <input type="submit" name="" value="Submit">
+     
+                </div>
 
             </form>
 
