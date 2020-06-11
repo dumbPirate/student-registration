@@ -3,14 +3,14 @@ body{
     background: linear-gradient(to right, #2c3e50, #fd746c);
 }
 
-/* html{ overflow-y: scroll;} */
-
 
 .box{
     width: 450px;
     background: white;
     border-radius: 12px 12px 12px 12px;
     position: absolute;
+    /* top: 100px;
+    left: 524px; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -21,6 +21,7 @@ body{
                 0 16px 8px rgba(0,0,0,0.09),
                 0 32px 16px rgba(0,0,0,0.09);
 }
+
 
 .box2{
     /* width: 820px; */
@@ -46,32 +47,35 @@ body{
 #ico{
     padding: 0px;
     text-align: right;
-    style="float:right;"
 }
 
-.select-dropdown{ color: grey; }
+.select-dropdown{
+    color: grey;
+}
 
 .to_pad{
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0px;
 }
-
-.btn-large {
+/* 
+.btn {
     padding: 0 15px !important;
     width: 130px;
-    /* height: 100px; */
-}
+    height: 100px;
+} */
 
-i.left {
+/* i.left {
     margin-right: 0px;
-}
+} */
 
 .btn, .btn-large, .btn-small {
     background-color: teal;
 }
 
 .btn, .btn-large, .btn-small, .btn-flat {
-    border-radius: 12px;
+    border-radius: 10px;
+    text-transform: capitalize;
 }
 
 
@@ -79,12 +83,12 @@ h5, h2{
     padding-left: 25px;
     padding-right: 10px;
     padding-top: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 20px;
     background-color: teal;
     font-variant: small-caps;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-top: 0px;
+    margin: 0px;
     margin-bottom: 18px;
     color: white;
     border-radius: 13px 13px 0px 0px;
@@ -101,15 +105,15 @@ a, i{
     margin-bottom: 8px;
 }
 
+.tyu{
+    width: 150px;
+}
+
 
 input[type=date]{
     color: grey;
 }
 
-
-.select-dropdown{
-    color: grey;
-}
 
 .box input[type = "submit"],.box input[type = "reset"]{
     border:0;

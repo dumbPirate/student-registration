@@ -56,9 +56,6 @@ def show_tables():
     return render_template('data.html', data=html_file)
 
 
-@app.route("/toedit")
-def to_edit():
-    return render_template('toedit.html')
 
 @app.route('/todelete')
 def to_delete():
@@ -76,6 +73,9 @@ def delete_user():
     return render_template('deletion.html', variable = r_num)
 
 
+@app.route("/toedit")
+def to_edit():
+    return render_template('toedit.html')
 
 @app.route('/edit', methods = ['POST'])
 def edit_data():
@@ -87,8 +87,6 @@ def edit_data():
         c = a[a['reg_num']==r_num].values.tolist()[0]
         d = dict(zip(b, c))
         r = a[a['reg_num']== r_num].index
-        # a.drop(r, inplace = True)
-        # a.to_csv('data.csv')
 
     return render_template('edit.html', variable = d)
 

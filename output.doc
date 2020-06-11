@@ -1,0 +1,33 @@
+Folder PATH listing for volume Drive-2
+Volume serial number is 9E64-E1F6
+D:.
+|   app.py
+|   data.csv
+|   output.doc
+|   Pipfile
+|   Pipfile.lock
+|   Untitled.ipynb
+|   
++---.ipynb_checkpoints
+|       Untitled-checkpoint.ipynb
+|       
++---.vscode
+|       settings.json
+|       
++---static
+|       materialize.min.css
+|       materialize.min.js
+|       sam.js
+|       style.css
+|       
+\---templates
+        data.html
+        deletion.html
+        edit.html
+        index.html
+        register.html
+        resuccess.html
+        success.html
+        todelete.html
+        toedit.html
+        

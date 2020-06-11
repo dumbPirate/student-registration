@@ -140,12 +140,18 @@
                         <label for="year">Year</label>
                     </div>
     
-                    <div class="input-field col s3">
-                        <input type="submit" name="" value="Submit">
+                    <div class="input-field col s4">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">check</i>
+                        </button>
                     </div>
-                    <div class="input-field col s3">
-                        <input type="reset" value="Reset">
+     
+                    <div class="input-field col s4">
+                        <button class="btn waves-effect waves-light" type="reset" name="action">Reset
+                            <i class="material-icons right">cached</i>
+                        </button>
                     </div>
+                    
                     <div class="input-field col s4">
                         <input id = "dis" type="text" placeholder="dis" class = "validate" value = {{variable['reg_num']}} readonly="readonly" name = "dis" />
                         <label for="dis"></label>

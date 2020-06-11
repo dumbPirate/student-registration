@@ -17,14 +17,17 @@
             <form  class="box" action="/submit" method="POST">
 
                 <div>
-                    <h5>Student Registeration </h>
-                    <div id="ico">
-                        <a href="/toedit"><i>&#9998;</i></a>
-                        <!-- <a href="/data"><i>&#9729;</i></a> -->
-                    </div>
+
+                    <h5>Basic Details</h5>
                 </div>
 
+
                 <div class = "to_pad">
+
+                    <!-- <div class="progress">
+                        <div class="determinate" style="width: 66%"></div>
+                    </div> -->
+
                     <div class="input-field col s6">
                         <input id="first_name" type="text" pattern="^[a-zA-Z]*" 
                         oninvalid="setCustomValidity('Please enter alphabets only. ')"
@@ -138,11 +141,23 @@
                         <label for="year">Year</label>
                     </div>
     
-
+<!-- 
                     <input type="submit" name="" value="Submit">
-                    <input type="reset" value="Reset">
-
+                    <input type="reset" value="Reset"> -->
+                    <div class="input-field col s4">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">check</i>
+                        </button>
+                    </div>
      
+                    <div class="input-field col s4">
+                        <button class="btn waves-effect waves-light" type="reset" name="action">Reset
+                            <i class="material-icons right">cached</i>
+                        </button>
+                    </div>
+
+ 
+
                 </div>
 
             </form>
