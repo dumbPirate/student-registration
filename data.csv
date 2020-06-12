@@ -1,15 +1,13 @@
 reg_num,first_name, last_name, email, phone, birthday, gender, state, city, pincode, uni_name, field, year
-100,shubham, nautiyal, shuubam@gmail.com,9999999999.0,9/29/2011, male, Goa, affad,123123.0, afdfds, asdf,1966.0
-105,my,nautiyal,shuubam@gum.com,9999999999.0,2020-05-27,male,Chhattisgarh,affad,123123.0,afdfds,asdf,1966.0
-106,jhon,smith,jhon@hyu.com,5678567856.0,5/24/2020,male,Tripura,yhntgb,789789.0,cvbdfgh,tgbyhn,2003.0
-107,dsfjkllk,doe,asdfgh@sdfaf.com,5675675676.0,5/7/2020,female,Assam,uhuhu,789789.0,dfshakjh,sadjflk,2000.0
-114,hjkl,hjkl,sadfjk@yuooo.df,7897897890.0,,male,Bihar,afdssa,789789.0,sajdhfhkjsa,asdjhfhkas,1952.0
-115,new,value,nv@nvi.nvi,7776665554.0,,male,Himachal_Pradesh,rty,888888.0,asdfa,dfdsaf,1968.0
-116,current,value,value@new.com,5675675678.0,2020-05-02,male,Puducherry,yhn,757575.0,njunju,mkimki,1995.0
-117,tro,tr,ad@ad.ad,6666666666.0,,male,Bihar,tr,444444.0,tr,tr,1957.0
-118,try,try,try@try.try,1231231234.0,,male,Assam,retry,123123.0,try,try,1984.0
-119,qaz,okm,oktyy@ass.com,1231231234.0,2020-05-07,male,Arunachal_Pradesh,guj,456456.0,okm,okm,1999.0
-120,wsx,qaz,qaz@qaz.com,7897897898.0,2020-05-13,male,Assam,qaz,456456.0,qaz,qaz,1988.0
-121,as,,,,,female,Bihar,,,,,
-123,qw,,,,,male,Chandigarh,,,,,
-124,qwer,qw,qw@qw.com,5656565656.0,2020-06-06,male,Bihar,qw,565656.0,qw,qw,1951.0
+100,shubham, nautiyal, shuubam@gmail.com,9999999999,9/29/2011, male, Goa, affad,123123, afdfds, asdf,1966
+105,my,nautiyal,shuubam@gum.com,9999999999,5/27/2020,male,Chhattisgarh,affad,123123,afdfds,asdf,1966
+106,jhon,smith,jhon@hyu.com,5678567856,5/24/2020,male,Tripura,yhntgb,789789,cvbdfgh,tgbyhn,2003
+107,dsfjkllk,doe,asdfgh@sdfaf.com,5675675676,5/7/2020,female,Assam,uhuhu,789789,dfshakjh,sadjflk,2000
+114,hjkl,hjkl,sadfjk@yuooo.df,7897897890,,male,Bihar,afdssa,789789,sajdhfhkjsa,asdjhfhkas,1952
+115,new,value,nv@nvi.nvi,7776665554,,male,Himachal_Pradesh,rty,888888,asdfa,dfdsaf,1968
+116,current,value,value@new.com,5675675678,5/2/2020,male,Puducherry,yhn,757575,njunju,mkimki,1995
+117,tro,tr,ad@ad.ad,6666666666,,male,Bihar,tr,444444,tr,tr,1957
+118,try,try,try@try.try,1231231234,,male,Assam,retry,123123,try,try,1984
+119,qaz,okm,oktyy@ass.com,1231231234,5/7/2020,male,Arunachal_Pradesh,guj,456456,okm,okm,1999
+120,wsx,qaz,qaz@qaz.com,7897897898,5/13/2020,male,Assam,qaz,456456,qaz,qaz,1988
+124,sumit,nautiyal,qw@qw.com,5656565656,6/6/2020,male,Bihar,qw,565656,qw,qw,1951
