@@ -18,7 +18,7 @@ Purpose of this document is to define functional requirement for the development
 * [Materialize CSS](https://materializecss.com/getting-started.html) - great UI boilerplate for modern web apps
 
 
-### Installation
+## Installation
 
 Requires [pyhton](https://www.python.org/downloads/) v3+ to run.
 
@@ -31,7 +31,7 @@ pip install pandas
 python app.py
 ```
 
-### Database
+## Database
 Currently using csv (flat file) database.
 
 | **Field** | **Interface type** | **Data Type** | **Length** | **Remarks** |
@@ -58,7 +58,7 @@ Verify the deployment by navigating to your server address in your preferred bro
 127.0.0.1:5000
 ```
 
-### Todos
+## Todos
 
  - Write MORE Tests
 
