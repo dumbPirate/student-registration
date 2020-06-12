@@ -1,6 +1,7 @@
 # Student Registration Portal
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+[comment]: <> ([![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger))
 
 This is an open source project which lets you create student management system in fast, clean, scalable manner and can be used for different types of registrations in any environment.
 
@@ -17,7 +18,6 @@ Purpose of this document is to define functional requirement for the development
 
 * [Python](https://www.python.org/) - god's language
 * [Flask](https://palletsprojects.com/p/flask/) - awesome web-framework
-* [markdown-it] - Markdown parser done right. Fast and easy to extend.
 * [Materialize CSS](https://materializecss.com/getting-started.html) - great UI boilerplate for modern web apps
 
 
