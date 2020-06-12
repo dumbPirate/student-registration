@@ -1,8 +1,5 @@
 # Student Registration Portal
 
-
-[comment]: <> ([![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger))
-
 This is an open source project which lets you create student management system in fast, clean, scalable manner and can be used for different types of registrations in any environment.
 
 ## Introduction
