@@ -2,12 +2,6 @@
 
 This is an open source project which lets you create student management system in fast, clean, scalable manner and can be used for different types of registrations in any environment.
 
-## Introduction
-### Overview
-Registrations are vital part of every organization. This project focuses in student registration service which is helpful for students as well as departments. Each student is facilitated by the web portal that can create, modify and delete a user. 
-
-### Purpose
-Purpose of this document is to define functional requirement for the development. It is intended to be complete specifications of the registration system and to help any organization maintain and manage its user’s personal data.
 
 ## Setup Environment
 
